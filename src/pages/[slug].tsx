@@ -135,7 +135,7 @@ export default function Page(data: any) {
      data-full-width-responsive="true"
     />    
      
-          <h1>{article.name}</h1>     
+          <h1>{article.summary ? article.summary : article.name}</h1>     
           
 {/* <div id="M936535ScriptRootC1576084"></div>
           <script src="https://jsc.adskeeper.com/c/e/celebrity.thongtinluat.com.1576084.js"   async  ></script> */}
