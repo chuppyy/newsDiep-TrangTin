@@ -12,6 +12,21 @@ export default function Page(data: any) {
   const article = data.data;
   useEffect(() => {
     try {
+      const iframe =  document.querySelector<HTMLIFrameElement>('.content iframe');
+    const handleIframeLoad = () => {
+      if (iframe) {
+        iframe.style.height = '400px'
+        iframe.style.width = '700px'
+      }
+    };
+
+    if (iframe) {
+      iframe.addEventListener("load", handleIframeLoad);
+
+      return () => {
+        iframe.removeEventListener("load", handleIframeLoad);
+      };
+    }
       var qcImgDiv = document.getElementById("qcImg");
 
       if (qcImgDiv) {
