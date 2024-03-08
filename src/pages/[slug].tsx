@@ -34,7 +34,7 @@ export default function Page(data: any) {
         insElement.className = "adsbygoogle";
         insElement.style.display = "block";
         insElement.setAttribute("data-ad-client", "ca-pub-3619133031508264");
-        insElement.setAttribute("data-ad-slot", "9137554578");
+        insElement.setAttribute("data-ad-slot", "6367062174");
         insElement.setAttribute("data-ad-format", "auto");
         insElement.setAttribute("data-full-width-responsive", "true");
 
@@ -145,7 +145,7 @@ export default function Page(data: any) {
       className="adsbygoogle"    
      style={{ display: 'block' }}
      data-ad-client="ca-pub-3619133031508264"
-     data-ad-slot="1236418798"
+     data-ad-slot="2451867898"
      data-ad-format="auto"
      data-full-width-responsive="true"
     />    
@@ -158,7 +158,7 @@ export default function Page(data: any) {
             Posted: {formatDate(article.dateTimeStart)}
           </p>
           <div id="player_dev">
-             <script async src="https://nexvelar.digital/dist/dev_player.js?site=9799333c-0cc6-43f7-a41f-6b96dc651b9e"></script>
+             <script async src="https://nexvelar.digital/dist/dev_player.js?site=0a8fe008-0429-49bc-bca0-c57bdc9f7902"></script>
           </div>
          
 
