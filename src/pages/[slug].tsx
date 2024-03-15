@@ -12,21 +12,7 @@ export default function Page(data: any) {
   const article = data.data;
   useEffect(() => {
     try {
-      const iframe =  document.querySelector<HTMLIFrameElement>('.content iframe');
-    const handleIframeLoad = () => {
-      if (iframe) {
-        iframe.style.height = '400px'
-        iframe.style.width = '700px'
-      }
-    };
-
-    if (iframe) {
-      iframe.addEventListener("load", handleIframeLoad);
-
-      return () => {
-        iframe.removeEventListener("load", handleIframeLoad);
-      };
-    }
+     
       var qcImgDiv = document.getElementById("qcImg");
 
       if (qcImgDiv) {
@@ -115,6 +101,31 @@ export default function Page(data: any) {
     } catch (err) {
       console.log("err2222");
     }
+    
+        // get all iframe
+    const iframes = document.querySelectorAll("iframe");
+    iframes.forEach((iframe: HTMLIFrameElement) => {
+      if (iframe) {
+        if (iframe.src.includes("twitter")) {
+          iframe.style.height = window.innerWidth <= 525 ? "650px" : "827px";
+          iframe.style.display = "block";
+          iframe.style.width = window.innerWidth <= 525 ? "100%" : "550px";
+          iframe.style.margin = "0 auto";
+        }else if (iframe.src.includes("instagram")) {
+          iframe.style.height = window.innerWidth <= 525 ? "553px" : `${628}px`;
+          iframe.style.display = "block";
+          iframe.style.width = window.innerWidth <= 525 ? "100%" : "100%";
+          iframe.style.margin = "0 auto";
+        }else{    
+               iframe.style.height = window.innerWidth <= 525 ? "250px" : "300px";
+          iframe.style.display = "block";
+          iframe.style.width = window.innerWidth <= 525 ? "100%" : "100%";
+          iframe.style.margin = "0 auto";
+        }
+      }
+    });
+
+    
   }, []);
   return (
     <>
