@@ -21,7 +21,7 @@ export default function Page(data: any) {
     scriptElement.async = true;
 
     const scriptContainer = document.getElementById(
-      "M942715ScriptRootC1596349"
+      "M942733ScriptRootC1589922"
     );
     if (scriptContainer) {
       scriptContainer.appendChild(scriptElement);
