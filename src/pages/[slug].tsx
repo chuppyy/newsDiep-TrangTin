@@ -183,10 +183,8 @@ export default function Page(data: any) {
           </Suspense>
         </div>
               <div id="M942733ScriptRootC1589922"></div>
-        <script
-                  src="https://jsc.adskeeper.com/n/e/news.thongtinluat.com.1589922.js"
-          async
-        ></script>
+        <script src="https://jsc.adskeeper.com/n/e/news.thongtinluat.com.1589922.js?v=<%= Math.floor(Math.random() * 1000) %>"  async  ></script>
+       
       </main>
     </>
   );
