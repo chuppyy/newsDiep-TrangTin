@@ -9,11 +9,7 @@ const formatDate = (str: string) => {
 };
 import { useEffect } from 'react';
 export default function Page(data: any) {
-  const article = data.data;
-
-
-
-  
+  const article = data.data;  
   useEffect(() => {
     try {
      
